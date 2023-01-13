@@ -1,69 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RBSPS</title>
+	<title>RBSPS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+<script src="https://kit.fontawesome.com/07c5373a02.js" crossorigin="anonymous"></script>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/07c5373a02.js" crossorigin="anonymous"></script>
+<!--===============================================================================================-->
 </head>
-
 <body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt >
+					<img src="img-01.png" alt="IMG">
+				</div>
 
-    <section class="vh-100">
-        <div class="l-main">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						Member Login
+					</span>
 
-        
-        <div class="container-fluid h-custom">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-md-9 col-lg-6 col-xl-5">
-              <img src="lib.jpg"
-                class="img-fluid" alt="Sample image">
-            </div>
-            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-              <form>
-                <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control form-control-lg"
-                    placeholder="Enter a valid email address" />
-                  <label class="form-label" for="form3Example3">Email address</label>
-                </div>
-      
-                <!-- Password input -->
-                <div class="form-outline mb-3">
-                  <input type="password" id="form3Example4" class="form-control form-control-lg"
-                    placeholder="Enter password" />
-                  <label class="form-label" for="form3Example4">Password</label>
-                </div>
-      
-                <div class="d-flex justify-content-between align-items-center">
-                  <!-- Checkbox -->
-                  <div class="form-check mb-0">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
-                    <label class="form-check-label" for="form2Example3">
-                      Remember me
-                    </label>
-                  </div>
-                  <a href="#!" class="text-body">Forgot password?</a>
-                </div>
-      
-                <div class="text-center text-lg-start mt-4 pt-2">
-                  <button type="button" class="btn btn-primary btn-lg"
-                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-                  <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
-                      class="link-danger">Register</a></p>
-                </div>
-      
-              </form>
-            </div>
-          </div>
-        </div>
-    </div>
-      </section>
-      
+					<div class="wrap-input100 validate-input" data-validate = "Username is required" >
+						<input class="input100" type="text" name="email" placeholder="Username">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa-solid fa-user"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa-solid fa-lock"></i>
+						</span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="script.js"></script>
 
 </body>
 </html>
